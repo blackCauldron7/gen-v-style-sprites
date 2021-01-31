@@ -16,3 +16,5 @@
 # Credits
 
 - https://www.deviantart.com/diegotoon20
+- https://www.deviantart.com/lemmylover531
+- https://www.deviantart.com/n-kin
