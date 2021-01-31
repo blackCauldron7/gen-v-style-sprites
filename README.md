@@ -1,7 +1,5 @@
 # gen-v-style-sprites
 
----
-
 # Script
 
 ## Prerequisites
@@ -14,8 +12,6 @@
 - Change the file_paths variable in main.py
 - python main.py to change from name to national dex numbers
 - python main.py r to change from national dex numbers to name
-
----
 
 # Credits
 
