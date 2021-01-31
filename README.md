@@ -18,3 +18,4 @@
 - https://www.deviantart.com/diegotoon20
 - https://www.deviantart.com/lemmylover531
 - https://www.deviantart.com/n-kin
+- https://www.smogon.com/forums/threads/x-y-sprite-project.3486712/
