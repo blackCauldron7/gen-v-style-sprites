@@ -1,5 +1,12 @@
 # gen-v-style-sprites
 
+# Naming Scheme
+
+NationalDexNumber_gender_orientation
+
+- gender only applicable if the sprites are different for different genders
+- orientation only applies if the orientation is back sprite and is denoted by a "b"
+
 # Script
 
 ## Prerequisites
