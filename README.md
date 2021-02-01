@@ -2,9 +2,9 @@
 
 # Naming Scheme
 
-NationalDexNumber_gender_orientation
+nationalDexNumber_gender_orientation
 
-- gender only applicable if the sprites are different for different genders
+- gender only applicable if the sprites are different for different genders male is "m" and female is "f"
 - orientation only applies if the orientation is back sprite and is denoted by a "b"
 
 # Script
@@ -22,6 +22,7 @@ NationalDexNumber_gender_orientation
 
 # Credits
 
+- https://www.pokencyclopedia.info/
 - https://www.deviantart.com/diegotoon20
 - https://www.deviantart.com/lemmylover531
 - https://www.deviantart.com/n-kin
