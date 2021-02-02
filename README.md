@@ -22,6 +22,8 @@ nationalDexNumber_gender_orientation
 
 # Credits
 
+- JaredTKL95, Emblemious, blackCauldron7
+- https://bulbapedia.bulbagarden.net/
 - https://www.pokencyclopedia.info/
 - https://www.deviantart.com/diegotoon20
 - https://www.deviantart.com/lemmylover531

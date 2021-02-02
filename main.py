@@ -30,35 +30,37 @@ for gen in range(1, gens+1):
     for mon in poke_table.find_all("tr")[1:]:
         data = mon.find_all("td")
         number = data[1].text.strip()[1:]
-        name = data[2].text.strip()
+        name = normalize_string(data[2].text.strip())
         POKEMONS.append((number, name))
 
-if "r" in args:
-    for file_path in file_paths:
-        files = os.listdir(file_path)
-        for file in files:
-            filename, ext = os.path.splitext(file)
-            for pokemon in POKEMONS:
-                if pokemon[0] == filename.lower():
-                    new_filename = f"{normalize_string(pokemon[1])}{ext}"
-                    if os.path.isfile(os.path.join(file_path, new_filename)):
-                        print(f"{pokemon} already exists")
-                        break
-                    os.rename(os.path.join(file_path, file), os.path.join(file_path,
-                        new_filename))
-                    break
-else:
-    for file_path in file_paths:
-        files = os.listdir(file_path)
-        for file in files:
-            filename, ext = os.path.splitext(file)
-            for pokemon in POKEMONS:
-                if normalize_string(pokemon[1].lower()) in file.lower():
-                    new_filename = f"{pokemon[0]}{ext}"
-                    if os.path.isfile(os.path.join(file_path, new_filename)):
-                        print(f"{pokemon} already exists")
-                        break
-                    os.rename(os.path.join(file_path, file), os.path.join(file_path,
-                        new_filename))
-                    break
+print(POKEMONS)
+
+# if "r" in args:
+#     for file_path in file_paths:
+#         files = os.listdir(file_path)
+#         for file in files:
+#             filename, ext = os.path.splitext(file)
+#             for pokemon in POKEMONS:
+#                 if pokemon[0] == filename.lower():
+#                     new_filename = f"{pokemon[1]}{ext}"
+#                     if os.path.isfile(os.path.join(file_path, new_filename)):
+#                         print(f"{pokemon} already exists")
+#                         break
+#                     os.rename(os.path.join(file_path, file), os.path.join(file_path,
+#                         new_filename))
+#                     break
+# else:
+#     for file_path in file_paths:
+#         files = os.listdir(file_path)
+#         for file in files:
+#             filename, ext = os.path.splitext(file)
+#             for pokemon in POKEMONS:
+#                 if pokemon[1].lower() in file.lower():
+#                     new_filename = f"{pokemon[0]}{ext}"
+#                     if os.path.isfile(os.path.join(file_path, new_filename)):
+#                         print(f"{pokemon} already exists")
+#                         break
+#                     os.rename(os.path.join(file_path, file), os.path.join(file_path,
+#                         new_filename))
+#                     break
 
